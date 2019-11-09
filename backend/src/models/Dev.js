@@ -15,7 +15,6 @@ const DevSchema = new Schema({
         required: true
     },
     likes: [{
-        // type: Schema.user,
         type: Schema.Types.ObjectId,
         ref: 'Dev'
     }],
