@@ -19,7 +19,7 @@ module.exports = {
         console.log(`User ${loggedDev.user} liked ${targetDev.user}`)
 
         if (targetDev.likes.includes(loggedDev._id)) {
-            console.log('QUE MASSA DEU MATCH!')
+            console.log(`${loggedDev.user} deu Match com ${targetDev.user}`)
         }
 
         return response.json(loggedDev)

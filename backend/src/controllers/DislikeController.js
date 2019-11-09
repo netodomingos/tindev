@@ -16,7 +16,7 @@ module.exports = {
 
         await loggedDev.save()
 
-        console.log(`User ${loggedDev.user} disliked ${targetDev.user}`)
+        console.log(`User ${loggedDev.user} disliked ${targetDev.user}!`)
 
         return response.json(loggedDev)
     }

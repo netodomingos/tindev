@@ -10,10 +10,10 @@ mongoose.connect('mongodb+srv://tindev:tindev@cluster0-iszij.mongodb.net/tindev?
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
+
 app.use(cors())
 app.use(express.json())
 app.use(routes)
-
 
 app.listen(3333, () => {
     console.log('Server Running on Port 3333')

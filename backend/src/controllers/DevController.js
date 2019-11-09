@@ -43,4 +43,5 @@ module.exports = {
         console.log(`User ${username} created.`)
         return response.json(dev)
     }
+
 }
