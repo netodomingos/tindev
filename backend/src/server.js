@@ -1,0 +1,19 @@
+const express = require('express')
+const mongoose = require('mongoose')
+
+const routes = require('./routes.js')
+
+const app = express()
+
+mongoose.connect('mongodb+srv://tindev:tindev@cluster0-iszij.mongodb.net/tindev?retryWrites=true&w=majority', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true 
+})
+
+app.use(express.json())
+app.use(routes)
+
+
+app.listen(3333, () => {
+    console.log('Server Running on Port 3333')
+})
